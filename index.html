@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Workspace</title>
+    <!-- Connects your CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Visa Workspace</h1>
+        <p>Select a destination to track your visa requirements.</p>
+
+        <!-- Country Dropdown -->
+        <label for="country-select">Destination:</label>
+        <select id="country-select">
+            <option value="">-- Choose a country --</option>
+            <option value="thailand">Thailand</option>
+            <option value="uae">Dubai (UAE)</option>
+            <option value="japan">Japan</option>
+            <option value="brazil">brazil</option>
+            <option value="port">portugal</option>
+        </select>
+
+        <!-- Visa Details Card (Hidden until a country is picked) -->
+        <div id="visa-card" style="display: none;">
+            <h2 id="country-title"></h2>
+            <p><strong>Visa Type:</strong> <span id="visa-type"></span></p>
+            <p><strong>Est. Fee:</strong> <span id="visa-fee"></span></p>
+            <p><strong>Processing Time:</strong> <span id="visa-time"></span></p>
+
+            <!-- Progress Bar -->
+            <div class="progress-section">
+                <p>Checklist Progress: <span id="progress-text">0%</span></p>
+                <progress id="progress-bar" value="0" max="100"></progress>
+            </div>
+
+            <!-- Document Checklist (JavaScript will fill this in) -->
+            <h3>Required Documents</h3>
+            <ul id="checklist"></ul>
+        </div>
+    </div>
+
+    <!-- Connects your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

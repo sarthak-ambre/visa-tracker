@@ -13,16 +13,13 @@
         <h1>Visa Workspace</h1>
         <p>Select a destination to track your visa requirements.</p>
 
-        <!-- Country Dropdown -->
-        <label for="country-select">Destination:</label>
-        <select id="country-select">
-            <option value="">-- Choose a country --</option>
-            <option value="thailand">Thailand</option>
-            <option value="uae">Dubai (UAE)</option>
-            <option value="japan">Japan</option>
-            <option value="brazil">brazil</option>
-            <option value="port">portugal</option>
-        </select>
+        
+        <!-- Country Search -->
+    <label for="country-input">Destination:</label>
+    <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+        <input type="text" id="country-input" placeholder="Type any country (e.g., Switzerland, Vietnam)..." style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+        <button id="search-btn" style="padding: 10px 16px; border-radius: 8px; border: none; background: #0f766e; color: white; cursor: pointer;">Search</button>
+    </div>
 
         <!-- Visa Details Card (Hidden until a country is picked) -->
         <div id="visa-card" style="display: none;">

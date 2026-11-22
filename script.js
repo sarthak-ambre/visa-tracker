@@ -18,7 +18,7 @@ searchBtn.addEventListener("click", async function () {
     searchBtn.textContent = "Loading...";
 
     // 3. Ask your Python + Gemini API for ANY country
-    const response = await fetch(`http://127.0.0.1:5000/api/visa/${selected}`);
+    const response = await fetch(`https://visa-tracker-0dng.onrender.com/api/visa/${selected}`);
     const data = await response.json();
 
     searchBtn.textContent = "Search";
